@@ -9,62 +9,88 @@ main {
 }
 
 @media screen and (min-width:375px) {
-    body{
+    body {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     main {
         width: 327px;
         height: 543px;
         border-radius: 15px;
     }
- 
-    }
-   
 
-    img {
+    .cube {
+        position: relative;
+        margin-left: 24px;
+        margin-top: 24px;
         width: 278px;
         height: 278px;
-        margin-left: 24px;
-        margin-top: 24px;
-        margin-right: 25px
+        border-radius: 22px;
+        background-color: #00FFF8;
+        ;
     }
+}
 
-    
-    h1 {
-        margin-top: 24px;
-        margin-left: 24px;
-        width: 278px;
-        height: 28px;
-        font-family: 'outfit', sans-serif;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 27px;
-        color: white;
-    }
+.eye-img {
 
-    .p-1 {
-        margin-top: 12px;
-        margin-left: 24px;
-        width: 278px;
-        height: 52px;
-        font-family: 'outfit', sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 26px;
-        color: #8BACD9;
-    }
 
-    .eth {
-        margin-top: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        width: 278px;
-        height: 19px;
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.cube-img {
+    width: 100%;
+    margin-right: 25px;
+    border-radius: 20px;
+}
+
+
+.cube:hover .cube-img {
+    opacity: 50%;
+}
+
+.cube:hover .eye-img {
+    display: block;
+}
+
+h1 {
+    margin-top: 24px;
+    margin-left: 24px;
+    width: 278px;
+    height: 28px;
+    font-family: 'outfit', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+}
+
+.p-1 {
+    margin-top: 12px;
+    margin-left: 24px;
+    width: 278px;
+    height: 52px;
+    font-family: 'outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #8BACD9;
+}
+
+.eth {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 278px;
+    height: 19px;
+}
 
 .eth-p {
 
@@ -105,60 +131,91 @@ main {
     color: #8BACD9;
 }
 
-.line{
+.line {
     margin-top: 16px;
-    margin-left:24px;
+    margin-left: 24px;
     width: 278px;
     height: 1px;
-    background-color:#2E405A;
+    background-color: #2E405A;
 
 }
-footer{
-    display:flex;
+
+footer {
+    display: flex;
     align-items: center;
+    width: 278px;
+    margin-left: 24px;
+    margin-top: 15px;
+
 }
 
-   .creator-p {
+.creator-p {
     width: 33px;
     height: 33px;
 }
-.creator-span{
+
+.creator-span {
+    margin-left: 5px;
     color: #8BACD9;
 }
-.p-2{
-    margin-top:15px;
-    width: 170px;
+
+.p-2 {
+    margin-left: 7px;
+    width: 175px;
     height: 19px;
     line-height: 19px;
-    font-weight:400;
-    color:white;
+    font-weight: 400;
+    color: white;
 }
 
 @media screen and (min-width:1024px) {
-    main{
+    main {
         width: 350px;
         height: 596px;
     }
-    img{
+
+    .cube {
+        position: relative;
+        margin-left: 24px;
+        margin-top: 24px;
         width: 302px;
         height: 302px;
+        border-radius: 22px;
+        background-color: #00FFF8;
+        ;
     }
-    h1{
+
+    .eye-img {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+
+    h1 {
         width: 302px;
         height: 28px;
     }
-    .p-1{
+
+    .p-1 {
         width: 302px;
         height: 52px;
     }
-    .eth{
+
+    .eth {
         width: 302px;
         height: 20px;
     }
-    .line{
+
+    .line {
         width: 302px;
     }
-    footer{
+
+    footer {
         width: 302px;
+        margin-top: 25px;
     }
 }
